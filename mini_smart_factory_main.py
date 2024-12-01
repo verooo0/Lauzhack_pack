@@ -92,17 +92,8 @@ def send_telemetry():
 
     try:
         while True:
-            # Simulate machine speed (1 to 5 boxes per 10 seconds)
-            # machine_speed = random.randint(1, 5)
-            #machine_speed = servo.value
-            
-            # # Simulate machine speed change every 30 boxes
-            # if total_output_unit_count % 30 == 0:
-            #     machine_speed = random.randint(1, 5)
             
             total_output_unit_count = contador
-            # energy_used = machine_speed * 0.05  # Example: 0.05 kWh per box
-            #total_working_energy += energy_used
 
             # Create telemetry data with the current UTC timestamp
             telemetry_data = {
